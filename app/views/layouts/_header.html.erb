@@ -1,0 +1,10 @@
+<div id="header" class="round">
+  <% logo = image_tag("logo.png", :alt => "LegalNinja", :class => "round") %>
+  <%= link_to logo, root_path %>
+  <ul class="navigation round">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Help", help_path %></li>
+    <li><%= link_to "Sign in", '#' %></li>
+  </ul>
+</div>
+
