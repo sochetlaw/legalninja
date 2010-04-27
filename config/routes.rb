@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :users
+
   map.contact '/contact', :controller => 'pages', :action => 'contact'
   
   map.about   '/about',   :controller => 'pages', :action => 'about'
@@ -11,11 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :microposts
 
-  map.resources :microposts
-
-  map.resources :users
-
-  # The priority is based upon order of creation: first created -> highest priority.
+ # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
   #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'

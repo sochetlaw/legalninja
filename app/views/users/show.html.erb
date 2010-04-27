@@ -1,28 +1,13 @@
-<p>
-  <b>First:</b>
-  <%=h @user.first %>
-</p>
-
-<p>
-  <b>Last:</b>
-  <%=h @user.last %>
-</p>
-
-<p>
-  <b>Middle:</b>
-  <%=h @user.middle %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%=h @user.email %>
-</p>
-
-<p>
-  <b>Password:</b>
-  <%=h @user.password %>
-</p>
-
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<table class="profile">
+  <tr>
+    <td class="main">
+      <h2>
+	<%= gravatar_for @user %>
+	<%= @user.first %> <%= @user.last %>
+	</h2>
+	<td class="sidebar round">
+	        <strong>Name</strong> <%= h @user.first %> <%= @user.last %><br />
+      		<strong>URL</strong>  <%= link_to user_path(@user), @user %>
+    </td>
+  </tr>
+</table>

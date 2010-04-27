@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  first: 
+  last: 
+  middle: 
+  password: 
+  email: MyString
+
+two:
+  first: 
+  last: 
+  middle: 
+  password: 
+  email: MyString
